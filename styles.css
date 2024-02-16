@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&family=Roboto&display=swap');
+:root{
+    --color-primary: #8AB0AB;
+    --color-secondary: #26413C;
+    --color-grey: #1A1D1A;
+    --button-boxshadow: inset 1px 1px 34px 17px rgba(0,0,0,0.26);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secondary);
+    margin: 0;
+    min-height: 100vh;
+    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
+    font-family: 'Roboto', sans-serif;
+    color: var(--color-primary);
+    font-size: 6rem;
+}
+.tictactoe{
+    display: flex;
+    justify-content: center;
+    width: 50rem;
+    height: 50rem;
+    background-color: var(--color-grey);
+    flex-direction: column;
+    gap:1rem;
+}
+.row{
+    display: flex;
+    gap: 1rem;
+    flex-basis: 33.33%;
+}
+.cell{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 33.33%;
+    background-color: var(--color-primary);
+}
+.cell:hover{
+    box-shadow: var(--button-boxshadow);
+    user-select: none;
+}
+button{
+    border-radius: 5px;
+    border: 0;
+    background-color: ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1rem;
+    color: palevioletred;
+    padding: 0.5rem 1 rem;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+button:hover{
+    scale: 1.05;
+}
